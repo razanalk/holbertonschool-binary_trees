@@ -1,6 +1,11 @@
 #include "binary_trees.h"
 
-/* حساب الارتفاع */
+/**
+ * height - measures the height of a binary tree
+ * @tree: pointer to the root node
+ *
+ * Return: height of the tree
+ */
 int height(const binary_tree_t *tree)
 {
 	int left, right;
@@ -14,7 +19,12 @@ int height(const binary_tree_t *tree)
 	return ((left > right ? left : right) + 1);
 }
 
-/* حساب عدد النودز */
+/**
+ * count_nodes - counts the number of nodes in a binary tree
+ * @tree: pointer to the root node
+ *
+ * Return: number of nodes
+ */
 int count_nodes(const binary_tree_t *tree)
 {
 	if (tree == NULL)
@@ -24,8 +34,8 @@ int count_nodes(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_is_perfect - checks if tree is perfect
- * @tree: root
+ * binary_tree_is_perfect - checks if a binary tree is perfect
+ * @tree: pointer to root node
  *
  * Return: 1 if perfect, 0 otherwise
  */
